@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>login</title>
+</head>
+<body>
+      <div class="container" id="container">
+        <div class="form-container sing-up">
+               <form>
+                <h1> create accoint</h1>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-google" style="color: #10b248;"></i></a> 
+                <a href="#">   <i class="fa-brands fa-facebook" style="color: #0d09c8;"></i> </a>
+                 <a href="#"> <i class="fa-brands fa-apple" style="color: #d6780dde;"></i>  </a>
+                </div>
+              
+                    <span>or use your email for registeratin</span>
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <button id="loginbn" >sign up</button>
+               </form>
+        </div>
+          <div class="form-container sing-in">
+               <form>
+                  <h1> sing-in</h1>
+                  <div class="social-icon">
+                   <a href="#"><i class="fa-brands fa-google" style="color: #10b248;"></i></a> 
+                  <a href="#"><i class="fa-brands fa-facebook" style="color: #0d09c8;"></i> </a>
+                   <a href="#"><i class="fa-brands fa-apple" style="color: #fcf8f9de;"></i>  </a>
+                  </div>
+                    <span>or use your emali password</span>
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                  <a href="#"> forget your passwored</a>
+                   <button>sign in</button>
+               </form>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle">
+              <div class="toggle-pane1 toggle-left">
+                       <h1>welcome back!</h1>
+                       <p>enter your personal details to us all site features</p>
+                       <button class="hidden"id="login"> sign in</button>
+              </div>
+              <div class="toggle-pane1 toggle-right">
+                      <h1>holew friend<h1>
+                       <p>enter your personal details to us all site features</p>
+                       <button class="hidden"id="register"> sign up</button>
+              </div>
+          </div>
+        </div>
+             
+      </div>
+      <script>
+        let container=document.getElementById("container")
+      let registerbtn=document.getElementById("register")
+      let login=document.getElementById("login")
+       registerbtn.addEventListener("click",function(){
+           container.classList.add("active")
+       })
+       login.addEventListener("click",function(){
+        container.classList.remove("active")
+        })
+      </script>
+</body>
+</html>

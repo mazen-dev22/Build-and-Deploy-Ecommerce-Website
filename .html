@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="elzero">
+             <h1>mazen</h1>
+           <p>welcome to mazen ahmed</p>
+           <button id="del">ازله</button>
+    </div>
+    <style>
+        .elzero{
+            background-color: black;
+            color: aliceblue;
+            width: 200px;
+            height: 150px;
+             position: fixed;
+             top: -100%;
+        }
+         .elzero.show{
+            top: 0;
+         }
+
+    </style>
+      
+    <script>
+      let elzero=document.querySelector(".elzero")
+      let del=document.getElementById("del")
+       setTimeout(()=>{
+          elzero.classList.add("show");
+       }, 3000)
+    del.addEventListener("click", ()=>{
+       elzero.remove();
+    })
+    </script>
+</body>
+
+</html>
+
